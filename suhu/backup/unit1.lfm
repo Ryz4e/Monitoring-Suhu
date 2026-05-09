@@ -1,0 +1,112 @@
+object Form1: TForm1
+  Left = 296
+  Height = 322
+  Top = 159
+  Width = 412
+  Caption = 'Form1'
+  ClientHeight = 322
+  ClientWidth = 412
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  object Button1: TButton
+    Left = 144
+    Height = 25
+    Top = 240
+    Width = 115
+    Caption = 'Connect'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Btn2: TButton
+    Left = 168
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'Close'
+    TabOrder = 1
+    OnClick = Btn2Click
+  end
+  object Label1: TLabel
+    Left = 96
+    Height = 30
+    Top = 8
+    Width = 236
+    Caption = 'Monitor Sensor Industri'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 97
+    Height = 15
+    Top = 48
+    Width = 74
+    Caption = 'Status             :'
+    OnClick = Label2Click
+  end
+  object lblstatus: TLabel
+    Left = 176
+    Height = 15
+    Top = 48
+    Width = 72
+    Caption = 'Disconnected'
+  end
+  object Label4: TLabel
+    Left = 96
+    Height = 15
+    Top = 72
+    Width = 76
+    Caption = 'Temperatur    :'
+  end
+  object Label5: TLabel
+    Left = 96
+    Height = 15
+    Top = 96
+    Width = 75
+    Caption = 'Register          :'
+  end
+  object EditTemp: TEdit
+    Left = 176
+    Height = 23
+    Top = 64
+    Width = 32
+    TabOrder = 2
+    Text = '0'
+  end
+  object EditRegister: TEdit
+    Left = 176
+    Height = 23
+    Top = 88
+    Width = 80
+    TabOrder = 3
+    Text = '40001'
+  end
+  object MemoLog: TMemo
+    Left = 88
+    Height = 112
+    Top = 120
+    Width = 224
+    Lines.Strings = (
+      ''
+    )
+    TabOrder = 4
+  end
+  object suhu: TEdit
+    Left = 208
+    Height = 23
+    Top = 64
+    Width = 48
+    TabOrder = 5
+    Text = 'suhu'
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 336
+    Top = 168
+  end
+end
