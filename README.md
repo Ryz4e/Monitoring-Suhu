@@ -1,4 +1,4 @@
-# Industrial Sensor Monitoring System
+# Temperature Monitoring System
 
 Desktop-based industrial monitoring application developed using Lazarus (Free Pascal).
 
